@@ -1,0 +1,25 @@
+schema {
+    query: Query,
+    mutation: Mutation,
+}
+
+type Query {
+    findMemberById(id: Int!): Member,
+    findAllMembers: [Member],
+}
+
+type Mutation {
+    createMember(createMemberInfo: CreateMember!): Member!,
+    deleteMemberById(id: Int!): Boolean!,
+}
+
+type Member {
+    id: Int
+    name: String
+    isStudent: Boolean
+}
+
+input CreateMember {
+        name: String!,
+        isStudent: Boolean!,
+}
