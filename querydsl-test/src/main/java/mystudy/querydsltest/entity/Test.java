@@ -24,9 +24,12 @@ public class Test {
     @Column(length = 100)
     private String testContents;
 
+    @Column(nullable = false)
+    private Integer number;
+
     @Builder
-    public Test(Integer testId, String testContents) {
-        this.testId = testId;
+    public Test(Integer testId, String testContents, Integer number) {
         this.testContents = testContents;
+        this.number = number;
     }
 }

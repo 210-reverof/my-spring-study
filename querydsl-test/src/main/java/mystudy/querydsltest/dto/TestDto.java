@@ -1,4 +1,4 @@
-package mystudy.querydsltest;
+package mystudy.querydsltest.dto;
 
 import lombok.Getter;
 import lombok.Setter;
