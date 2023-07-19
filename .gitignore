@@ -6,7 +6,7 @@ HELP.md
 !**/**/src/test/**/build/
 **/src/main/resources/application.properties
 **/src/main/resources/application.yml
-
+**/src/main/resources/external/
 
 ### STS ###
 .apt_generated
