@@ -1,0 +1,7 @@
+spring:
+  config:
+    import:
+      - classpath:/external/external.yaml
+  jpa:
+    hibernate:
+      ddl-auto: update
